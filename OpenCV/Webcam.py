@@ -31,9 +31,11 @@ import cv2
 #=========================================================
 
 
+
 #=====================================================================
 # Распознание через вэбкамеру лица и выделение его в прямоугольник
 
+face_cascades = cv2.CascadeClassifier(cv2.data.hearcascades + "hearcascade_frontalface_default.xml")
 cap = cv2.VideoCapture(0)
 
 while True:
