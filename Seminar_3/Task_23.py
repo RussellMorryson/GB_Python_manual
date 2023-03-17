@@ -9,3 +9,10 @@
 # списка или список задан изначально.
 array = [0, -1, 5, 2, 3]
 
+count = 0
+idx = 0
+while idx < len(array) - 1:
+    idx += 1
+    if array[idx - 1] < array[idx]:
+        count += 1
+print(count)
