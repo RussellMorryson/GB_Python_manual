@@ -14,7 +14,7 @@ array = array.split(' ')
 letter_arr = {'0'}
 letter_array = []
 number_arr = []
-fatal_array = []
+
 for i in array:
     letter_arr.add(i)
 letter_arr.remove('0')
