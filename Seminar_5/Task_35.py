@@ -6,10 +6,16 @@
 Input: 5
 Output: yes"""
 
+def func(n):
+    result = True
+    for i in range(2, n):
+        if n % i == 0:
+            result = False
+    return result
+
 print("Программа для проверки является ли введенное число простым")
 number = int(input("Введите число: "))
-
-if number % number == 0 and number % 2 != 0 and number % 3 != 0:
+if func(number):
     print("yes")
 else:
     print("no")
